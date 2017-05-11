@@ -22,10 +22,10 @@ $^{b}${\em{CNR-ITC Padova, Italy}} \\\received{}}
 \maketitle
 
 \begin{abstract}
-This paper focuses on the detection of defects and thermal bridges in insulated truck box panels, utilizing Infrared thermography. Unlike the traditional way in which passive thermography is applied, this research uses both heating and cooling methods in active thermography configurations. Lamp heating is used as the hot external stimulation, while a compressed air jet is applied as the cold external stimulation. An IR camera captures the whole process. In addition, numerical simulations under COMSOL$^®$ platform are also conducted. Experimental and simulation results for two situations are compared and discussed.
+This paper focuses on the detection of defects and thermal bridges in insulated truck box panels, utilizing infrared thermography. Unlike the traditional way in which passive thermography is applied, this research uses both heating and cooling methods in active thermography configurations. Lamp heating is used as the hot external stimulation, while a compressed air jet is applied as the cold external stimulation. An IR camera captures the whole process. In addition, numerical simulations under COMSOL$^®$ platform are also conducted. Experimental and simulation results for two situations are compared and discussed.
 
-\begin{keywords}IR Thermography; Liquid Nitrogen Cooling;
-COMSOL; Truck panel; Thermal Bridge
+\begin{keywords}Infrared Thermography; Liquid Nitrogen Cooling;
+COMSOL; Truck Panel; Thermal Bridge
 \end{keywords}
 
 \end{abstract}
@@ -91,7 +91,7 @@ The Construction Technologies Institute of the Italian National Research Council
 % \tabnote{$^{\rm b}$This footnote shows the text turning over when a long footnote is added.}
 % \label{sample-table}
 % \end{table}
-In order to localize the possible defects inside the specimen, active Infrared Thermography \cite{Maldague2001theory,Balageas2016}, one of the Non-destructive Testing \& Evaluation techniques, is applied for diagnostics. Basically, the specimen to inspect is thermally stimulated and the subsequent temperature evolution is recorded to reveal possible subsurface ﬂaws. In this study two opposing approaches of external stimulations are then applied with the goal of clearly detecting the flaws in the truck panel. One approach uses a traditional lamp heating; the other method involves air cooling. 
+In order to localize the possible defects inside the specimen, active infrared thermography \cite{Maldague2001theory,Balageas2016}, one of the non-destructive testing \& evaluation techniques, is applied for diagnostics. Basically, the specimen to inspect is thermally stimulated and the subsequent temperature evolution is recorded to reveal possible subsurface ﬂaws. In this study two opposing approaches of external stimulations are then applied with the goal of clearly detecting the flaws in the truck panel. One approach uses a traditional lamp heating; the other method involves air cooling. 
 
 
 % \section{Additional features}
@@ -100,21 +100,21 @@ The experiment is set up with the following equipment, shown in Figure~\ref{Exp}
 \begin{figure}
 	\centering
 	\includegraphics[scale=0.5]{Exp}
-	\caption{Experimental Set-up}
+	\caption{Experimental set-up}
 	\label{Exp}
 \end{figure}
 
 \begin{itemize}
-  \item Two halogen lamps with a total heat source of 1000W;
+  \item Two halogen lamps with a total heat source of 1000 W;
   \item A FLIR Phoenix thermal camera (640×512 pixels, InSb, 3-5 $\mu m$);
-  \item Compressed air connected by a tube and a nozzle with a diameter of 5mm (Zoomed bottom left).
+  \item Compressed air connected by a tube and a nozzle with a diameter of 5 $mm$ (zoomed bottom left).
 \end{itemize}
 
 The whole procedure of study is described as follows:  
 
-For lamp heating, two halogen lamps each with a total heat source of 1000$ W $ are employed at a distance of 0.4 $ m $ and at an angle of about 45° for the purpose of homogeneously heating the surface. The duration of the heating process is only 20 $ s $.   
+For lamp heating, two halogen lamps are employed at a distance of 0.4 $ m $ and at an angle of about 45° for the purpose of homogeneously heating the surface. The duration of the heating process is only 20 $ s $.   
 
-For air-cooling, compressed air with a temperature of about 15° (details are shown in Table~\ref{air_cool}) is sprayed at a distance of 0.4$ m $ and at an angle of about 45° in the \textbf{left} front of the specimen’s surface. It is a central spray form left to right along the specimen surface. By doing this, one tries to avoid the direct squirt on the area of defects. In this process, contrary to the heating one, the specimen was preheated to about 30$ °C $, which is similar to the real situation for detection of truck panel defects in the summer. The duration of the cooling-down process is about 20 $ s $ as well.   
+For air-cooling, compressed air with a temperature of about 15° (details are shown in Table~\ref{air_cool}) is sprayed at a distance of 0.4 $m$ and at an angle of about 45° in the \textbf{left} front of the specimen’s surface. It is a central spray form left to right along the specimen surface. By doing this, one tries to avoid the direct squirt on the area of defects. In this process, contrary to the heating one, the specimen was preheated to about 30$ °C $, which is similar to the real situation for detection of truck panel defects in the summer. The duration of the cooling-down process is about 20 $ s $ as well.   
  \begin{table}
  \tbl{Air-Cooling parameters.}
  {\begin{tabular}[l]{@{}cccccc}\toprule
@@ -139,14 +139,14 @@ The physical nature of the heat transfer is governed by the differential equatio
 \begin{equation}
 \rho C_p \frac{\partial T}{\partial t}-\nabla \cdot (k\nabla T) = 0
 \end{equation}
-where $\rho$ is the density (\textit{kg/m3}),   $C_p$ is the material heat capacity at constant pressure (\textit{J/(kg·K})), $ T $ is absolute temperature ($ K $) and \textit{k} is the material thermal conductivity (\textit{W/(m·K})) and $ t $ is the time.
+where $\rho$ is the density (\textit{$kg/m^3$}),   $C_p$ is the material heat capacity at constant pressure (\textit{J/(kg·K})), $ T $ is absolute temperature ($ K $) and \textit{k} is the material thermal conductivity (\textit{W/(m·K})) and $ t $ is the time ($s$).
 
 The boundary condition included heat transfer by convection and radiation from the object surfaces and the  heat  source $q_0 $  applied on the front surface as the following: 
 \begin{equation}
 n(k\nabla T) = q_0 + h_{cv}(T_{amb}-T)+\sigma \epsilon(T_{amb}^4-T^4)
 \label{eqf}
 \end{equation}
-where $n$ is the normal direction of surface, $ h_{cv} $ is the constant convective heat transfer coefficient, $\sigma$ is the Stefan-Boltzmann constant  and $\epsilon$ is the emissivity that is the ratio of radiant emittance of an object to that of a blackbody at the same temperature. Its value lies from zero for a non radiating object and 1.0 for a blackbody. $ T_{amb} $ is the Room temperature.
+where $n$ is the normal direction of surface, $ h_{cv} $ is the constant convective heat transfer coefficient, $\sigma$ is the Stefan-Boltzmann constant  and $\epsilon$ is the emissivity that is the ratio of radiant emittance of an object to that of a blackbody at the same temperature. Its value lies from zero for a non radiating object and 1.0 for a blackbody. $ T_{amb} $ is the room temperature.
 
 \begin{figure}[ht]
 	%\centering
@@ -167,7 +167,7 @@ where $n$ is the normal direction of surface, $ h_{cv} $ is the constant convect
 Parameters for each model are introduced as follows:\\
 For lamp heating, Heat Transfer in Solid with Surface-to-Surface Radiation module is applied in the model. Therefore, one assumes that there is no effect by convective transfer [$h_{cv}=0$ in eq. \ref{eqf}]
 
-For air cooling, Heat transfer and Single Phase Laminar Flow modules are implemented since the convection effect in this case has a more significant influence. The Multiphysics setting is also set as a Non-Isothermal Flow. Then one assumes that there is no effect by the heat source [$ q_0=0 $ in eq. \ref{eqf}]
+For air cooling, Heat transfer and Single Phase Laminar Flow modules are implemented since the convection effect in this case has a more significant influence. The Multiphysics setting is also set as a non-isothermal flow. Then one assumes that there is no effect by the heat source [$ q_0=0 $ in eq. \ref{eqf}]
 
 For the static regime, a simple Heat Transfer in Solid module is employed. Thus one has $ h_{cv} $=0 and $ q_0=0 $ in eq. \ref{eqf}
 
@@ -186,7 +186,7 @@ All materials properties applied in the models can be found in Table~\ref{mat_pr
           & Dynamic viscosity $\mu [10^{-5}kg/m\cdot s]$ 
           & Ratio of specific heat $\gamma$   \\
 	 \hline
-   Aluminum (plaques and Thermal bridge)	&2700	&238	&900 &0.77 & & \\
+   Aluminum (plaques and thermal bridge)	&2700	&238	&900 &0.77 & & \\
    Foam	&24	&0.03	&1300 & & & \\
    Air	&1.2 &0.024	&1.005 & &1.846 &1.4 \\
    Sawdust	&192	&0.08	&900 & & & \\
@@ -202,28 +202,28 @@ All materials properties applied in the models can be found in Table~\ref{mat_pr
 
 
 \section{Results and Discussion}
-Several image post-processing methods can be applied, such as Pulsed Phase Thermography \cite{Maldague1996}, Principal Component Thermography \cite{Rajic2002}. PCT technique uses “singular value decomposition (SVD) to reduce the matrix of observations to a highly compact statistical representation of the spatial and temporal variations relating to contrast information associated with underlying structural flaws”. Temperature distributions of the panel surface for both cases are presented in Figure~\ref{exp_res} and Figure~\ref{sim_res} (Front View). Both lamp-heating and air-cooling images shown are the third image post-processed by the PCT technique. It is clear that in experimental results, the defects of metal and water are easy to identify, in both heating and cooling cases. The Thermal bridges are slightly clearer in the cooling process than the heating process. However, the defect of the wet napkin has almost not been displayed in both cases. On the other hand, in simulation results, due to the ideal conditions, one can clearly notice the four defects mentioned above. Figure 5 indicates that there is a more obvious view of defects in lamp heating as opposed to air cooling, the detection time of the latter is much less.
+Several image post-processing methods can be applied, such as Pulsed Phase Thermography \cite{Maldague1996}, Principal Component Thermography \cite{Rajic2002}. PCT technique uses “singular value decomposition (SVD) to reduce the matrix of observations to a highly compact statistical representation of the spatial and temporal variations relating to contrast information associated with underlying structural flaws”. Temperature distributions of the panel surface for both cases are presented in Figure~\ref{exp_res} and Figure~\ref{sim_res} (front View). Both lamp-heating and air-cooling images shown are the third image post-processed by the PCT technique. It is clear that in experimental results, the defects of metal and water are easy to identify, in both heating and cooling cases. The thermal bridges are slightly clearer in the cooling process than the heating process. However, the defect of the wet napkin has almost not been displayed in both cases. On the other hand, in simulation results, due to the ideal conditions, one can clearly notice the four defects mentioned above. Figure 5 indicates that there is a more obvious view of defects in lamp heating as opposed to air cooling, the detection time of the latter is much less.
 \begin{figure}
 %	\begin{center}
     %\centering
     \hspace{-20pt}
-    \subfigure[Lamp Heating Raw image]
+    \subfigure[Lamp heating raw image]
     {
         \includegraphics[scale=0.54]{Raw_heating.png}    
     }
     \hspace{-10pt}
-    \subfigure[Air Cooling Raw image]
+    \subfigure[Air cooling raw image]
     {
         \includegraphics[scale=0.54]{Raw_cooling.png}
     }\\
 
     \hspace{-20pt}
-    \subfigure[PCT 3$^{rd}$ image of Lamp Heating]
+    \subfigure[PCT 3$^{rd}$ image of lamp heating]
     {
         \includegraphics[scale=0.54]{Heat_FT_AMP}
     }   
     \hspace{-10pt}
-    \subfigure[PCT 3$^{rd}$ image of Air Cooling]
+    \subfigure[PCT 3$^{rd}$ image of air cooling]
     {
         \includegraphics[scale=0.54]{Cool_PCT3_2}
     }
@@ -236,12 +236,12 @@ Several image post-processing methods can be applied, such as Pulsed Phase Therm
 %	\begin{center}
     %\centering
     \hspace{-20pt}
-    \subfigure[Temperature distribution of Lamp Heating results]
+    \subfigure[Temperature distribution of lamp heating results]
     {
        \includegraphics[scale=0.7]{Truck_panel_flash_03}
     }
     \hspace{-5pt}
-	\subfigure[Temperature distribution of Air Cooling results]
+	\subfigure[Temperature distribution of air cooling results]
     {
         \includegraphics[scale=0.7]{Truck_panel_laminar_final_7_3}
     }
@@ -254,19 +254,19 @@ Nonetheless, in both experiments and simulation models the sawdust defect was im
 From the observations above, a discussion of detectability of defects can be summarized as:
 In comparison, both methods can only detect four defects rather than all. Although the halogen lamps were positioned to achieve a high energy pulse and a homogeneous heating as well, there is still an inhomogeneous distribution of temperature with a maximum in the middle of the sample and smaller values at the edges and especially in the area of wet napkin and sawdust (left edge part in the image). This might explain that wet napkin was displayed in computational results (ideal condition) while one could not detect it in real heating process. 
 
-For air cooling, the jet impingement can not be neglected. Since it was not an uniform spray to the sample surface, the squirt was produced in left center along the surface of the specimen to the right. Therefore, the areas of wet napkin and sawdust were not cooled well. The main part of air jet was deployed on the steel dust, water and thermal bridge defects zones. This might explain that in simulation model (ideal condition), at the first beginning of the cooling process the four defects appeared and in experimental test one could not observe the wet napkin defect.
+For air cooling, the jet impingement can not be neglected. Since it was not a uniform spray to the sample surface, the squirt was produced in left center along the surface of the specimen to the right. Therefore, the areas of wet napkin and sawdust were not cooled well. The main part of air jet was deployed on the steel dust, water and thermal bridge defects zones. This might explain that in simulation model (ideal condition), at the first beginning of the cooling process the four defects appeared and in experimental test one could not observe the wet napkin defect.
 
-In addition to the straight views comparison in the thermal images, the quantitative computation has also been carried out at the same time. Temperature evolutions in time for both cases are illustrated in Figure~\ref{exp_fig} and Figure~\ref{sim_fig}. Here one calculates the cases of the Water and Thermal Bridge (which are generally found in truck panels) compared to the Sound Area without defects. In both situations, experimental and simulation, it is observed that during lamp-heating, the temperatures of the thermal bridge and water defect area increased more slowly than the sound area value, while they decreased more slowly as well during air cooling. Quantitatively, for lamp heating, all defect temperature areas are lower than the sound area temperature. For air-cooling, on the contrary, all temperatures of defect areas are higher than that of the sound area (The descendant curve at the end of heating profile is due to the delay between the camera and lamps).  
+In addition to the straight views comparison in the thermal images, the quantitative computation has also been carried out at the same time. Temperature evolutions in time for both cases are illustrated in Figure~\ref{exp_fig} and Figure~\ref{sim_fig}. Here one calculates the cases of the water and thermal bridge (which are generally found in truck panels) compared to the sound area without defects. In both situations, experimental and simulation, it is observed that during lamp-heating, the temperatures of the thermal bridge and water defect area increased more slowly than the sound area value, while they decreased more slowly as well during air cooling. Quantitatively, for lamp heating, all defect temperature areas are lower than the sound area temperature. For air-cooling, on the contrary, all temperatures of defect areas are higher than that of the sound area (the descendant curve at the end of heating profile is due to the delay between the camera and lamps).  
 \begin{figure}
 	%	\begin{center}
     %\centering
     \hspace{-20pt}
-    \subfigure[Temperature evolution by Lamp Heating]
+    \subfigure[Temperature evolution by lamp heating]
     {
         \includegraphics[scale=0.55]{heating_evolution5}    
     }
     \hspace{-12pt}
-    \subfigure[Temperature evolution by Air cooling]
+    \subfigure[Temperature evolution by air cooling]
     {
         \includegraphics[scale=0.55]{cooling_evolution4}    
     }
@@ -279,12 +279,12 @@ In addition to the straight views comparison in the thermal images, the quantita
 	%	\begin{center}
     %\centering
     \hspace{-18pt}
-    \subfigure[Temperature evolution by Lamp Heating]
+    \subfigure[Temperature evolution by lamp heating]
     {
         \includegraphics[scale=0.46]{Truck_panel_Flash_TGraph_4}    
     }
     \hspace{6pt}
-    \subfigure[Temperature evolution by Air cooling]
+    \subfigure[Temperature evolution by air cooling]
     {
         \includegraphics[scale=0.46]{Truck_panel_laminar_TGraph_4}
     }
@@ -303,14 +303,14 @@ From the results above, one calculates the thermal contrasts between two defects
 		\hline
 		Sound Area & 0 & 0 & 0 & 0 \\
 		Water & 5.17 & 1.08 & 3.80 & 1.6 \\
-		Thermal bridge & 6.07 & 0.87 & 4.52 & 2.3 \\
+		Thermal bridge & 6.07 & 0.87 & 4.52 & 2.3 \\  
 		\hline
 	\end{tabular}
 	\label{tab_TCP}
 \end{table}
-This table indicates that for both cases, the Lamp Heating method has a higher contrast peak than the Air Cooling method. While comparing the temperature evolution profiles, the Air Cooling method requires less time to reach the contrast peak. This coincides with the detection of flaws in thermal images view.
+This table indicates that for both cases, the lamp heating method has a higher contrast peak than the air cooling method. While comparing the temperature evolution profiles, the air cooling method requires less time to reach the contrast peak. This coincides with the detection of flaws in thermal images view.
 
-For further exploration of the detection of each method, one defines here a “Threshold” with Cp = 1 as the limit of detection, where Cp is the peak of thermal contrast. As the experimental and computational results are very comparable from above, we change the size (diameter) of the water defect and the thickness of thermal bridge in both heating and cooling models to seek the limit of detection. For supplementary comparison, we add also a regular situation: the static regime. This acts as the traditional passive thermography. One imagines that the truck is under sunshine in the exterior during summer, and inside temperature is kept as the cold chain, which should be -20°C. Then an infrared camera from outside observes the truck panel. Different sizes of water defects and widths of the thermal bridge have been performed during the same period (20$ s $) for this case.
+For further exploration of the detection of each method, one defines here a “Threshold” with $C_p$ = 1 as the limit of detection, where $C_p$ is the peak of thermal contrast. As the experimental and computational results are very comparable from above, we change the size (diameter) of the water defect and the thickness of thermal bridge in both heating and cooling models to seek the limit of detection. For supplementary comparison, we add also a regular situation: the static regime. This acts as the traditional passive thermography. One imagines that the truck is under sunshine in the exterior during summer, and inside temperature is kept as the cold chain, which should be -20°C. Then an infrared camera from outside observes the truck panel. Different sizes of water defects and widths of the thermal bridge have been performed during the same period (20$ s $) for this case.
 
 All the computational results are presented in the following figures (Figure~\ref{sim_fig_stat} and Figure~\ref{sim_fig_ht})
 \begin{figure}
@@ -354,9 +354,9 @@ For lamp-heating situation, one can observe that whole contrast profiles had a u
 
 Finally, according to our “Threshold” $ C_p  = 1$, then from the figures the limit of detection of these three cases is (during a period of time [20$ s $]): 
 \begin{itemize}
-	\item Static regime: Water defect diameter 5 $ mm $; Thermal Bridge Thickness 0.5 $ mm $.
-	\item Air cooing: Water defect diameter 18 $ mm $; Thermal Bridge Thickness 0.6 $ mm $.
-	\item Lamp heating: Water defect diameter 14 $ mm $; Thermal Bridge Thickness 0.5 $ mm $.
+  \item static regime: water defect diameter 5 $ mm $; thermal bridge thickness 0.5 $ mm $.
+  \item air cooing: water defect diameter 18 $ mm $; thermal bridge thickness 0.6 $ mm $.
+  \item lamp heating: water defect diameter 14 $ mm $; thermal bridge thickness 0.5 $ mm $.
 \end{itemize}
 One must note that, these results have been obtained by simulation models, which were undertaken in ideal situations. The results might be different in the real case.
 
