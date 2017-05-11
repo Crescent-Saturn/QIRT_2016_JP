@@ -22,7 +22,7 @@ $^{b}${\em{CNR-ITC Padova, Italy}} \\\received{}}
 \maketitle
 
 \begin{abstract}
-This paper focuses on the detection of defects and thermal bridges in insulated truck box panels, utilizing infrared thermography. Unlike the traditional way in which passive thermography is applied, this research uses both heating and cooling methods in active thermography configurations. Lamp heating is used as the hot external stimulation, while a compressed air jet is applied as the cold external stimulation. An IR camera captures the whole process. In addition, numerical simulations under COMSOL$^®$ platform are also conducted. Experimental and simulation results for two situations are compared and discussed.
+This paper focuses on the detection of defects and thermal bridges in insulated truck box panels, utilizing infrared thermography. Unlike the traditional way in which passive thermography is applied, this research uses both heating and cooling methods in active thermography configurations. Lamp heating is used as the hot external stimulation, while a compressed air jet is applied as the cold external stimulation. A thermal camera captures the whole process. In addition, numerical simulations under COMSOL$^®$ platform are also conducted. Experimental and simulation results for two situations are compared and discussed.
 
 \begin{keywords}Infrared Thermography; Liquid Nitrogen Cooling;
 COMSOL; Truck Panel; Thermal Bridge
@@ -129,7 +129,7 @@ For air-cooling, compressed air with a temperature of about 15° (details are sh
 % \tabnote{$^{\rm b}$This footnote shows the text turning over when a long footnote is added.}
  \label{air_cool}
  \end{table}
-Both processes have been recorded by the thermal infrared camera with a resolution of 640$\times$512 pixels.  
+Both processes have been recorded by the thermal camera with a resolution of 640$\times$512 pixels.  
 
 \section{Simulation models}
 To obtain a comparative result, numerical models have also been developed, with the Finite Element Method under COMSOL Multiphysics$^{®}$. In addition to the similar transient problem appearing in experimental conditions, static regime simulation is also taken into account. The influences of heat conduction, convection and radiation (surface-to-surface and surface to ambient) on the heat flow through the defect have been simulated and analyzed.
@@ -310,7 +310,7 @@ From the results above, one calculates the thermal contrasts between two defects
 \end{table}
 This table indicates that for both cases, the lamp heating method has a higher contrast peak than the air cooling method. While comparing the temperature evolution profiles, the air cooling method requires less time to reach the contrast peak. This coincides with the detection of flaws in thermal images view.
 
-For further exploration of the detection of each method, one defines here a “Threshold” with $C_p$ = 1 as the limit of detection, where $C_p$ is the peak of thermal contrast. As the experimental and computational results are very comparable from above, we change the size (diameter) of the water defect and the thickness of thermal bridge in both heating and cooling models to seek the limit of detection. For supplementary comparison, we add also a regular situation: the static regime. This acts as the traditional passive thermography. One imagines that the truck is under sunshine in the exterior during summer, and inside temperature is kept as the cold chain, which should be -20°C. Then an infrared camera from outside observes the truck panel. Different sizes of water defects and widths of the thermal bridge have been performed during the same period (20$ s $) for this case.
+For further exploration of the detection of each method, one defines here a “Threshold” with $C_p$ = 1 as the limit of detection, where $C_p$ is the peak of thermal contrast. As the experimental and computational results are very comparable from above, we change the size (diameter) of the water defect and the thickness of thermal bridge in both heating and cooling models to seek the limit of detection. For supplementary comparison, we add also a regular situation: the static regime. This acts as the traditional passive thermography. One imagines that the truck is under sunshine in the exterior during summer, and inside temperature is kept as the cold chain, which should be -20°C. Then a thermal camera from outside observes the truck panel. Different sizes of water defects and widths of the thermal bridge have been performed during the same period (20$ s $) for this case.
 
 All the computational results are presented in the following figures (Figure~\ref{sim_fig_stat} and Figure~\ref{sim_fig_ht})
 \begin{figure}
